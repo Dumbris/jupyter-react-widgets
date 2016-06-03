@@ -1,0 +1,30 @@
+# Mac stuff
+.DS_Store
+
+# NPM and dependency objects
+npm-debug.log*
+js/node_modules
+
+# Auto-created files
+dist/*
+build/*
+release/*
+
+jupyterreactwidgets/static
+jupyterreactwidgets.egg-info
+
+# Temporary files
+tmp
+
+# Sublime Text
+*sublime-workspace
+*.sublime-project
+
+# Webstorm
+.idea/
+
+*.diff
+dist.tgz
+
+# Python items
+__pycache__

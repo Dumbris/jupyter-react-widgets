@@ -1,0 +1,9 @@
+## OS X/docker-machine will need `docker-machine ssh default -f -N -L 8888:localhost:8888` to map to localhost:8888 if desired
+## You will also need an AWS ECR login token: $(aws --region us-east-1 ecr get-login)
+jupyter:
+  image: 462639084867.dkr.ecr.us-east-1.amazonaws.com/jupyter:latest
+  ports:
+    - "8888:8888"
+  volumes:
+    # Map source folder into Docker container for faster development iterations
+    - ./:/source
