@@ -40,7 +40,6 @@
     "webpack": "^1.12.14"
   },
   "dependencies": {
-    "@roam/react-shared": "^1.0.104",
     "jupyter-js-widgets": "^1.1.1",
     "react": "^0.14.2",
     "react-addons-clone-with-props": "^0.14.2",
