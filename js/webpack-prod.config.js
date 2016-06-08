@@ -13,6 +13,7 @@ var loaders = [
     include: path.join(__dirname, "src")
   },
   { test: /\.json$/, loader: "json-loader" },
+  { test: /\.css$/, loaders: ["style", "css"] },
 ];
 
 var resolve = {

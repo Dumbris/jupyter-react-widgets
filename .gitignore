@@ -28,3 +28,6 @@ dist.tgz
 
 # Python items
 __pycache__
+
+*.sw?
+*.pyc

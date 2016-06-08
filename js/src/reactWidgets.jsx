@@ -3,6 +3,8 @@ var _ = require("underscore");
 var React = require("react");
 var ReactDOM = require("react-dom");
 var SampleWidget = require("./widgets/SampleWidget").default;
+var FilterExample = require("./widgets/FilterExample").default;
+import './css/fixed-data-table.css';
 
 // Custom Model. Custom widgets models must at least provide default values
 // for model attributes, including `_model_name`, `_view_name`, `_model_module`
@@ -16,7 +18,7 @@ var HelloModel = widgets.DOMWidgetModel.extend({
     _view_name : "HelloView",
     _model_module : "jupyter-react-widgets",
     _view_module : "jupyter-react-widgets",
-    value : "Hello World"
+    value : "Hello World111"
   })
 });
 
@@ -25,7 +27,9 @@ var sampleWidget;
 // Custom View. Renders the widget model.
 var HelloView = widgets.DOMWidgetView.extend({
   render: function() {
-    sampleWidget = ReactDOM.render(<SampleWidget/>, this.el);
+    console.log(FilterExample)
+    sampleWidget = ReactDOM.render(<FilterExample/>, this.el);
+      //sampleWidget = ReactDOM.render(<SampleWidget/>, this.el);
     this.value_changed();
     this.model.on("change:value", this.value_changed, this);
   },
