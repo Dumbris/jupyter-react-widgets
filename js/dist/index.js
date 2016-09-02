@@ -34,7 +34,7 @@ define(["jupyter-js-widgets"], function(__WEBPACK_EXTERNAL_MODULE_6__) { return 
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "https://npmcdn.com/jupyter-react-widgets@0.0.1/dist/";
+/******/ 	__webpack_require__.p = "https://unpkg.com/jupyter-react-widgets@0.0.1/dist/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -46,7 +46,7 @@ define(["jupyter-js-widgets"], function(__WEBPACK_EXTERNAL_MODULE_6__) { return 
 
 	'use strict';
 	
-	// Entry point for the npmcdn bundle containing custom model definitions.
+	// Entry point for the unpkg bundle containing custom model definitions.
 	//
 	// It differs from the notebook bundle in that it does not need to define a
 	// dynamic baseURL for the static assets and may load some css that would
