@@ -65,7 +65,7 @@ module.exports = [
    // The only difference is in the configuration of the webpack public path
    // for the static assets.
    //
-   // It will be automatically distributed by npmcdn to work with the static
+   // It will be automatically distributed by unpkg to work with the static
    // widget embedder.
    //
    // The target bundle is always `dist/index.js`, which is the path required
@@ -77,7 +77,7 @@ module.exports = [
       filename: "index.js",
       path: "./dist/",
       libraryTarget: "amd",
-      publicPath: "https://npmcdn.com/jupyter-react-widgets@" + version + "/dist/"
+      publicPath: "https://unpkg.com/jupyter-react-widgets@" + version + "/dist/"
     },
     devtool: "source-map",
     module: {
